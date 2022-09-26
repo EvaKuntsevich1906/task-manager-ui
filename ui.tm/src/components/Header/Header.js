@@ -9,8 +9,12 @@ const Header = () => {
             <div className={style['header-buttons']}>
                 <div className={style['header-nightmode']}></div>
                 <p className={style['header-contact']}>contact</p>
-                <div className={style['header-globe']}></div>
-                <p className={style['header-language']}>En</p>
+
+                <div className={style['header-lng']}>
+                    <div className={style['header-globe']}></div>
+                    <div className={style['header-language']}>En</div>
+                </div>
+
                 <div className={style['header-signup-button']}>
                     <p className={style['header-sign-text']}>Sign Up</p>
                 </div>

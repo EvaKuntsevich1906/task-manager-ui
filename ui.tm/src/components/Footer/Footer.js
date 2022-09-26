@@ -3,7 +3,7 @@ const Footer = () => {
 
     return (
         <footer>
-         <div className={style['wave-image-footer']}></div>
+      
         </footer>
     );
 };

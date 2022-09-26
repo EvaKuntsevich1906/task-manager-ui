@@ -1,9 +1,19 @@
 .main {
-    display: flex;
-    flex-direction: space-between;
+
+    padding-left: 81px;
+    position: relative
 }
-.headline-main-maincontent {
+
+.text-main-maincontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 632px;
+    height: 457px;
     margin-top: 137px;
+}
+
+.headline-main-maincontent {
     width: 628px;
     height: 178px;
     font-size: 59px;
@@ -11,7 +21,6 @@
 }
 
 .headline-text-main-maincontent {
-    margin-top: 43px;
     width: 588px;
     height: 84px;
     font-weight: 400;
@@ -21,26 +30,29 @@
 
 .start-btn-main-maincontent {
     display: flex;
-    flex-direction: space-between;
-    margin-top: 72px;
+    justify-content: center;
+    align-items: center;
     width: 573px;
     height: 77px;
     background: #31C2E4;
     border-radius: 34.6283px;
 }
 
+.text-arrow-main-maincontent {
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .start-btn-text-main-maincontent {
-margin-left: 178px;
-padding: 21px 0 ;
-height: 35px;
-padding: 21px auto 21px auto;
-font-weight: 600;
-font-size: 28px;
-color: #FFFFFF;
+    height: 35px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFFFFF;
 }
 
 .start-btn-arrow-main-maincontent {
-    margin: 35px auto  auto 20px;
     background-image: url("./assets/arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -49,12 +61,27 @@ color: #FFFFFF;
 }
 
 .image-main-maincontent {
-    margin: 150px  auto auto  320px ;
+    margin: 150px auto auto 320px;
     z-index: 2;
-    width: 800px;
-    height: 800px;
+    width: 894px;
+    height: 856px;
     z-index: 2;
     background-image: url("./assets/girl.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
+    left: 585px;
+    top: -191px;
+}
+
+.wave-image-footer-maincontent {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 570px;
+    height: 288px;
+    width: 1440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./assets/wave.svg");
 }

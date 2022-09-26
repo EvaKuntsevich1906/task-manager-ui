@@ -2,9 +2,3 @@
     width: 1920px;
     margin: auto;
 }
-footer {
-    z-index: 1;
-}
-.MainContent {
-    z-index: 2;
-}

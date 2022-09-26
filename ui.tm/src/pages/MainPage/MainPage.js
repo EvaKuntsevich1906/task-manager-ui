@@ -9,12 +9,10 @@ const MainPage = () => {
         <div className={style['main-page']}>
             <Header />
             <MainContent></MainContent>
-
-            <Footer />
-            <Link to={'/'}>Main</Link>
+            {/* <Link to={'/'}>Main</Link>
             <Link to={'/register'}>register</Link>
             <Link to={'/login'}>login</Link>
-            <Link to={'/task'}>task</Link>
+            <Link to={'/task'}>task</Link> */}
         </div>
     );
 };

@@ -10,11 +10,16 @@ const MainContent = () => {
                 <div className={style['headline-text-main-maincontent']}>This productive tool is designed to help
                     you better manage your tas conveniently!</div>
                 <div className={style['start-btn-main-maincontent']}>
-                    <div className={style['start-btn-text-main-maincontent']}>Let’s Start</div>
-                    <div className={style['start-btn-arrow-main-maincontent']}></div>
+                    <div className={style['text-arrow-main-maincontent']}>
+                        <div className={style['start-btn-text-main-maincontent']}>Let’s Start</div>
+                        <div className={style['start-btn-arrow-main-maincontent']}>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div className={style['image-main-maincontent']}> </div>
+            <div className={style['wave-image-footer-maincontent']}></div>
+            <div className={style['image-main-maincontent']}> </div>
+
         </main>
     )
 }

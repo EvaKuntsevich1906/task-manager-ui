@@ -1,17 +1,17 @@
 .header {
+    margin-top: 31px;
     display: flex;
     justify-content: space-between;
 }
 
 .logo-header{
-    margin-top: auto;
-    margin-bottom: auto;
     width: 226px;
     height: 84px;
     font-weight: 600;
     font-size: 56px;
     letter-spacing: -0.01em;
     color: #31C2E4;
+    padding-left: 81px;
 }
 
 .name-p {
@@ -21,11 +21,12 @@
 .header-buttons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 890px;
+    padding-right: 61px;
 }
 
 .header-nightmode {
-    margin: auto;
     background-image: url(./assets/Sky\ Switch\ -\ Dark.png);
     width: 120px;
     height: 49.9px;
@@ -39,8 +40,14 @@
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.03em;
-
     color: rgba(74, 74, 74, 0.72);
+}
+
+.header-lng{
+width: 57px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .header-globe {
@@ -61,8 +68,10 @@
     color: rgba(74, 74, 74, 0.72);
 }
 
-.heder-signup-button {
-    margin: auto;
+.header-signup-button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 181px;
     height: 44px;
     background: #31C2E4;
@@ -70,7 +79,6 @@
 }
 
 .header-sign-text {
-    margin: 5px auto;
     width: 85px;
     height: 33px;
     font-style: normal;
@@ -82,7 +90,9 @@
 }
 
 .header-login-button {
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     box-sizing: border-box;
     width: 181px;
     height: 44px;
@@ -92,8 +102,6 @@
 }
 
 .header-login-text {
-    margin: 5px auto;
-    margin: auto;
     width: 60px;
     height: 33px;
     font-weight: 600;
