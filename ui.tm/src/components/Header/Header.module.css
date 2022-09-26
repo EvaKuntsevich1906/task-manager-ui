@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 226px;
+    height: 84px;
+    font-weight: 600;
+    font-size: 56px;
+    letter-spacing: -0.01em;
+    color: #31C2E4;
+}
+
+.name-p {
+    color: green;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 890px;
+}
+
+.header-nightmode {
+    margin: auto;
+    background-image: url(./assets/Sky\ Switch\ -\ Dark.png);
+    width: 120px;
+    height: 49.9px;
+    background-size: cover;
+}
+
+.header-contact {
+    width: 102px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+
+    color: rgba(74, 74, 74, 0.72);
+}
+
+.header-globe {
+    margin: auto;
+    background-image: url(./assets/lang.png);
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+}
+
+.header-language {
+    width: 29px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: rgba(74, 74, 74, 0.72);
+}
+
+.heder-signup-button {
+    margin: auto;
+    width: 181px;
+    height: 44px;
+    background: #31C2E4;
+    border-radius: 13.0536px;
+}
+
+.header-sign-text {
+    margin: 5px auto;
+    width: 85px;
+    height: 33px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-login-button {
+    margin: auto;
+    box-sizing: border-box;
+    width: 181px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 2px solid #31C2E4;
+    border-radius: 13.0536px
+}
+
+.header-login-text {
+    margin: 5px auto;
+    margin: auto;
+    width: 60px;
+    height: 33px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #31C2E4;
+}   

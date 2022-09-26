@@ -1,0 +1,75 @@
+.MainContentRegister {
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+}
+
+.MainContentRegister-signIn {
+    margin-top: 59px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.MainContentRegister-txt {
+    color: rgba(74, 74, 74, 0.45);
+    font-weight: 500;
+}
+
+.MainContentRegister-btn {
+    margin-left: 9px;
+    color: #31C2E4;
+    font-weight: 600;
+}
+
+.MainContentRegister-txt-welcome {
+    height: 70px;
+    font-size: 56px;
+}
+
+.MainContentRegister-txt-welcomeTO {
+    font-weight: 600;
+}
+
+.MainContentRegister-txt-hschool {
+    color: #31C2E4;
+    font-weight: 600;
+}
+
+.MainContentRegister-txt-weekplan {
+    margin-top: 7px;
+    font-size: 14px;
+    color: rgba(74, 74, 74, 0.45);
+    font-weight: 500;
+}
+
+.MainContentRegister-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.MainContentRegister-form input {
+    margin-top: 35px;
+    width: 573px;
+    height: 77px;
+    background: #FFFFFF;
+    border: 2px solid rgba(74, 74, 74, 0.2);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.MainContentRegister-form-button {
+    width: 573px;
+    height: 77px;
+    margin-top: 35px;
+    background: #31C2E4;
+    border-radius: 10px;
+    
+}
+
+.MainContentRegister-form-button  p {
+    margin: 24px 0 0  186px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}

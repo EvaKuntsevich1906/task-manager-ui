@@ -1,0 +1,9 @@
+.auth-page {
+    width: 1920px;
+    margin: auto;
+}
+
+.AuthPageContent-block{
+    display: flex;
+    justify-content: space-between;
+}

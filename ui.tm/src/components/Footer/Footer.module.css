@@ -1,0 +1,7 @@
+.wave-image-footer {
+    background-image: url("./assets/wave.svg");
+    height: 450px;
+    width: 1900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

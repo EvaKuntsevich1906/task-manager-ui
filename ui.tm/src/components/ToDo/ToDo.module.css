@@ -1,0 +1,58 @@
+.wrapper {
+    width: 500px;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.block-flex-column {
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.block-flex-column p {
+    color: rgba(74, 74, 74, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-flex-column input {
+    outline: none;
+    border: 2px solid rgba(74, 74, 74, 0.2);
+    border-radius: 10px;
+    height: 50px;
+    width: 470px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.flex input {
+    margin: 12px;
+    width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(74, 74, 74, 0.3);
+    
+}
+
+
+.save-btn {
+    text-align: center;
+    padding-top: 6px;
+    margin-top: 36px;
+    width: 206px;
+    height: 25px;
+    background: #31C2E4;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+}

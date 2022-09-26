@@ -1,0 +1,12 @@
+.register-page {
+    width: 1920px;
+    margin: auto;
+}
+
+.RegisterPageContent-block{
+    display: flex;
+    justify-content: space-between;
+}
+.RegisterPageContent-block-right  {
+    margin-top: 176px;
+}

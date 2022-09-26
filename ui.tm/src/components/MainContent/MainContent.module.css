@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    flex-direction: space-between;
+}
+.headline-main-maincontent {
+    margin-top: 137px;
+    width: 628px;
+    height: 178px;
+    font-size: 59px;
+    font-weight: 600;
+}
+
+.headline-text-main-maincontent {
+    margin-top: 43px;
+    width: 588px;
+    height: 84px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #6E6A7C;
+}
+
+.start-btn-main-maincontent {
+    display: flex;
+    flex-direction: space-between;
+    margin-top: 72px;
+    width: 573px;
+    height: 77px;
+    background: #31C2E4;
+    border-radius: 34.6283px;
+}
+
+.start-btn-text-main-maincontent {
+margin-left: 178px;
+padding: 21px 0 ;
+height: 35px;
+padding: 21px auto 21px auto;
+font-weight: 600;
+font-size: 28px;
+color: #FFFFFF;
+}
+
+.start-btn-arrow-main-maincontent {
+    margin: 35px auto  auto 20px;
+    background-image: url("./assets/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 23px;
+}
+
+.image-main-maincontent {
+    margin: 150px  auto auto  320px ;
+    z-index: 2;
+    width: 800px;
+    height: 800px;
+    z-index: 2;
+    background-image: url("./assets/girl.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
