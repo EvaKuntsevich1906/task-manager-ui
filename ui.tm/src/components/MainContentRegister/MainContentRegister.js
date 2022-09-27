@@ -38,7 +38,9 @@ const MainContentRegister = () => {
 
     return (
         <main className={style['MainContentRegister']}>
+            
             <div className={style['MainContentRegister-info']}>
+
                 <div className={style['MainContentRegister-signIn']}>
                     <span className={style['MainContentRegister-txt']}>Already have an account?</span>
                     <span className={style['MainContentRegister-btn']}> Sign In</span>
@@ -48,6 +50,7 @@ const MainContentRegister = () => {
                         <span className={style['MainContentRegister-txt-welcomeTO']}> Welcome to </span>
                         <span className={style['MainContentRegister-txt-hschool']}> Hschool </span>
                     </div>
+
                     <div className={style['MainContentRegister-txt-weekplan']}>Join and plan your week with Hschool</div>
             </div>
 
@@ -58,6 +61,7 @@ const MainContentRegister = () => {
                 <input placeholder='  Email Adress'onChange={(event) => setEmail (event.target.value)}  />
                 <input placeholder='  Password' type = "password" onChange={(event) => setPassword (event.target.value)} />
                 <input placeholder='  Confitm Password' type = "password" />
+
                 <div className={style['MainContentRegister-form-button']} onClick={doRegistr}>
                     <p>Create an account</p></div>
             </div>

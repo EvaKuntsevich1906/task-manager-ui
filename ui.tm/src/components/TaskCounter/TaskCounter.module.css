@@ -1,0 +1,48 @@
+.taskCounter-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 364px;
+}
+
+.taskCounter-text {
+    width: 186px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+
+.taskCounter-description {
+    width: 186px;
+    height: 84px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(74, 74, 74, 0.45);
+}
+
+.taskCounter-list {
+    width: 186px;
+    height: 181px;
+    background: linear-gradient(39.54deg, #31C2E4 0%, #99DAEA 97.99%);
+    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+}
+
+.taskCounter-date-icon {
+    margin: 33px auto auto 28px;
+    width: 34px;
+    height: 34px;
+    background-image: url("./assets/calendar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.taskCounter-date-number {
+    margin: 30px auto auto 25px;
+    width: 38px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+}

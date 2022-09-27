@@ -1,58 +1,81 @@
-.wrapper {
-    width: 500px;
+.toDo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 578px;
+    height: 540px;
 }
 
-.label {
+.toDo-headline {
+    width: 74px;
+    height: 38px;
     font-weight: 500;
     font-size: 24px;
 }
 
-.block-flex-column {
-    height: 310px;
+.toDo-form-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 400px;
 }
-.block-flex-column p {
-    color: rgba(74, 74, 74, 0.3);
-    font-size: 16px;
-    font-weight: 500;
 
-}
-.flex {
+.toDo-form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    height: 114px;
 }
 
-.block-flex-column input {
-    outline: none;
+.toDo-form-txt {
+    width: 73px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(74, 74, 74, 0.45);
+}
+
+.toDo-create-del-inp {
+    width: 573px;
+    height: 77px;
+    background: #FFFFFF;
     border: 2px solid rgba(74, 74, 74, 0.2);
     border-radius: 10px;
-    height: 50px;
-    width: 470px;
-    padding-left: 25px;
-    font-size: 14px;
 }
 
-.flex input {
-    margin: 12px;
-    width: 200px;
+.toDo-create-del-inp ::placeholder {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(74, 74, 74, 0.3);
-    
 }
 
+.toDo-form-update-two-inp {
+    display: flex;
+    justify-content: space-between;
+    width: 573px;
+}
 
-.save-btn {
-    text-align: center;
-    padding-top: 6px;
-    margin-top: 36px;
+.toDo-upd-inp {
+    width: 251px;
+    height: 77px;
+    background: #FFFFFF;
+    border: 2px solid rgba(74, 74, 74, 0.2);
+    border-radius: 10px;
+}
+
+.toDo-save-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 206px;
-    height: 25px;
+    height: 45px;
     background: #31C2E4;
     border-radius: 10px;
-    color: #FFFFFF;
+}
+
+.toDo-save-btn p {
     font-weight: 600;
     font-size: 14px;
+    color: #FFFFFF;
+
 }

@@ -1,39 +1,36 @@
 import style from './ToDo.module.css';
 
 const ToDo = () => {
+
     return (
-        <div className={style['wrapper']}>
-            <p className={style['label']}>To do:</p>
-            <div className={style['block-flex-column']}>
+        <div className={style['toDo-content']}>
 
-                <div className={style['block-flex-column']}>
-                    <p>Create:</p>
-                    <div>
-                        <input placeholder='task' />
+            <p className={style['toDo-headline']}>To do:</p>
+
+            <div className={style['toDo-form-block']}>
+
+                <div className={style['toDo-form']}>
+                    <p className={style['toDo-form-txt']}>Create:</p>
+                    <input className={style['toDo-create-del-inp']} placeholder="   task"></input>
+                </div>
+
+                <div className={style['toDo-form']}>
+                    <p className={style['toDo-form-txt']}>Update:</p>
+                    <div className={style['toDo-form-update-two-inp']}>
+                        <input className={style['toDo-upd-inp']} placeholder="   Number"></input>
+                        <input className={style['toDo-upd-inp']} placeholder="   task"></input>
                     </div>
                 </div>
 
-                <div className={style['block-flex-column']}>
-                    <p>Update:</p>
-                    <div className={style['flex']}>
-                        <div>
-                            <input placeholder='Number' />
-                        </div>
-                        <div>
-                            <input placeholder='task' />
-                        </div>
-                    </div>
+                <div className={style['toDo-form']}>
+                    <p className={style['toDo-form-txt']}>Delete:</p>
+                    <input className={style['toDo-create-del-inp']} placeholder="   Number"></input>
                 </div>
-
-                <div className={style['block-flex-column']}>
-                    <p>Delete:</p>
-                    <div>
-                        <input placeholder='Number' />
-                    </div>
-                </div>
-
             </div>
-            <div className={style['save-btn']}> +  save</div>
+
+            <div className={style['toDo-save-btn']}>
+                <p className={style['']}>+ save </p>
+            </div>
         </div>
     );
 }
