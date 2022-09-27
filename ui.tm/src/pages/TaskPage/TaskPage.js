@@ -3,15 +3,19 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import ToDo from '../../components/ToDo/ToDo';
 import TaskCounter from '../../components/TaskCounter/TaskCounter';
+import TasksShedule from '../../components/TasksShedule/TasksShedule';
+import Menu from '../../components/Menu/Menu';
 // import Footer from "../../components/Footer/Footer";
 
 const TaskPage = () => {
     return (
         <div className={style['task-page']}>
              <Header></Header>
+             <Menu></Menu>
 
-             <ToDo></ToDo>
              <TaskCounter></TaskCounter>
+             <ToDo></ToDo>
+             <TasksShedule></TasksShedule>
         </div>
     );
 };

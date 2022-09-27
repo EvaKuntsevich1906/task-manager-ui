@@ -71,3 +71,4 @@ const MainContentRegister = () => {
 }
 
 export default MainContentRegister;
+

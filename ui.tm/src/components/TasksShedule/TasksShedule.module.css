@@ -1,0 +1,20 @@
+.tasksShedule-content {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.tasksShedule-Tasks {
+    width: 74px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom:14px;
+}
+.taskShedule-text {
+    height: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(74, 74, 74, 0.45);
+    margin-bottom:16px;
+}
