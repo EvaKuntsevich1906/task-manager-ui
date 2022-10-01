@@ -35,7 +35,6 @@ const MainContentRegister = () => {
         }      
     }
 
-
     return (
         <main className={style['MainContentRegister']}>
             

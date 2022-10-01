@@ -1,4 +1,14 @@
-.register-page {
+.task-page {
     width: 1920px;
     margin: auto;
+    position: re;
+}
+
+.task-page-header{
+    position: absolute;
+}
+
+.task-page-main {
+    display: flex;
+    justify-content: space-between;
 }

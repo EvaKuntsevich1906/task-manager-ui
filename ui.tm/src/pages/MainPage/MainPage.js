@@ -7,7 +7,10 @@ const MainPage = () => {
 
     return (
         <div className={style['main-page']}>
-            <Header />
+            <Header> 
+                
+            </Header>
+            
             <MainContent></MainContent>
             {/* <Link to={'/'}>Main</Link>
             <Link to={'/register'}>register</Link>

@@ -6,6 +6,7 @@ import TaskListImage from "../../components/TaskListImage/TaskListImage";
 const RegisterPage = () => {
 
     return (
+        
         <div className={style['register-page']}>
             <div className={style['RegisterPageContent-block']}>
                 <div className={style['RegisterContent-block-left']}>
