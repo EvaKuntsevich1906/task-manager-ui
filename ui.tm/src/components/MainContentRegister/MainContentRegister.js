@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import style from './MainContentRegister.module.css';
-import request from '../../hooks/http.hooks';
+import {postRequest} from '../../hooks/http.hooks';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ const MainContentRegister = () => {
             }
             if (checkName(fullName) && checkEmail(email) && checkPassword(password, dbpassword)) {
 
-            const response = await request('http://localhost:3001/api/users/registr', 'POST', { fullName: fullName, email: email, password: password })
+            const response = await postRequest('http://localhost:3001/api/users/registr', 'POST', { fullName: fullName, email: email, password: password })
             }
 
         } catch (err) {

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import style from './MainContentAuth.module.css';
-import request from '../../hooks/http.hooks';
+import {postRequest} from '../../hooks/http.hooks';
 import { auth } from '../../context/auth';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ const MainContentAuth = () => {
     
     const doAuth = async () => {
         try {
-            const response = await request('http://localhost:3001/api/users/auth', 'POST', { email: email, password: password })
+            const response = await postRequest('http://localhost:3001/api/users/auth', 'POST', { email: email, password: password })
             const { id,fullname } = response[0];
             auth.userid = id;
             if (!auth.userid) throw new Error("Вы не авторизировались в системе")
