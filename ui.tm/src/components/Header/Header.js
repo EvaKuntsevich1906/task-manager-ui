@@ -6,29 +6,44 @@ import HeaderItem from './HeaderItem';
 const Header = () => {
 
     const link = [`contact`, `En`];
+    if (window.location.href === "http://localhost:3000/") {
 
-    return (
+        return (
 
-        <header className={style['header']}>
+            <header className={style['header']}>
 
-            <h1 className={style['logo-header']}>Hschool</h1>
-            <div className={style['header-nightmode']}></div>
+                <h1 className={style['logo-header']}>Hschool</h1>
 
+                <div className={style['header-nightmode']}></div>
 
-            {link.map((el,index) => <HeaderItem key={index} title = {el} />)}
+                {link.map((el, index) => <HeaderItem key={index} title={el} />)}
 
-            <div className={style[`authorization`]}>
-                <div className={style['header-signup-button']}>
-                    <p className={style['header-sign-text']}>Sign Up</p>
+                <div className={style[`authorization`]}>
+                    <div className={style['header-signup-button']}>
+                        <p className={style['header-sign-text']}>Sign Up</p>
+                    </div>
+
+                    <div className={style['header-login-button']}>
+                        <p className={style['header-login-text']}>Login</p>
+                    </div>
                 </div>
 
-                <div className={style['header-login-button']}>
-                    <p className={style['header-login-text']}>Login</p>
+            </header>
+        )
+    } else {
+        return (<header className={style['header']}>
+
+            <h1 className={style['logo-header']}>Hschool</h1>
+
+            <div className={style[`logout`]}>
+                <div className={style['header-logout-button']}>
+                    <p className={style['header-logout-text']}>Sign Up</p>
                 </div>
             </div>
 
         </header>
-    )
+        )
+    }
 }
 
-export default Header
+export default Header;

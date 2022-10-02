@@ -1,4 +1,4 @@
-const request = async (url, method = `GET`, body = null, headers = {}) => {
+const request = async (url, method = `POST`, body = null, headers = {}) => {
     try {
         if (body) {
             body = JSON.stringify(body);

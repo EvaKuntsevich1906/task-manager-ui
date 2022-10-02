@@ -1,29 +1,30 @@
 import style from './TaskPage.module.css';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import ToDo from '../../components/ToDo/ToDo';
 import TaskCounter from '../../components/TaskCounter/TaskCounter';
 import TasksShedule from '../../components/TasksShedule/TasksShedule';
 import Menu from '../../components/Menu/Menu';
 import HeaderItem from '../../components/Header/HeaderItem';
-// import Footer from "../../components/Footer/Footer";
 
 const TaskPage = () => {
+    const { state } = useLocation();
+    console.log(`state ${state.id}`);
+    const user = state.user
     return (
         <div className={style['task-page']}>
-            <Menu></Menu>
+            <div className={style['task-menu-wrap']}><Menu></Menu></div>
             <div className={style['task-page-header']}>
                 <h1>Hschool</h1>
-                
-              <Header>  <HeaderItem title={`logout`}></HeaderItem> 
-              </Header>
-               <div className={style['task-page-main']}>
-                <TaskCounter></TaskCounter>
-                <ToDo></ToDo>
-                <TasksShedule></TasksShedule></div>
+                <Header><HeaderItem title={`logout`} /></Header>
+                <div className={style['task-page-main']}>
+                <div className={style['task-taskcounter-wrap']}><TaskCounter name={state.fullname} /></div>
+                <div className={style['task-todo-wrap']} id= {state.id}><ToDo /></div>
+                <div className={style['task-todo-wrap']}><TasksShedule /></div>
                 </div>
-        </div>
-    );
+            </div>
+            </div>
+    )
 };
 
-export default TaskPage;
+            export default TaskPage;

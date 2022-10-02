@@ -1,6 +1,6 @@
 const auth = {
-    isAuth: false
-    // userid: ''
+    isAuth: false,
+    userid: ""
 }
 
 export {auth}

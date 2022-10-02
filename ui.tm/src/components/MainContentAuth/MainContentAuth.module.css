@@ -42,3 +42,27 @@
     font-weight: 600;
 
 }
+
+.create{
+    padding-top: 29px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 573;
+    height: 24px;
+}
+
+.question{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(74, 74, 74, 0.45);
+    width: 130px;
+
+}
+
+.new-account {
+    font-weight: 500;
+    font-size: 16px;
+    color: #31C2E4;
+    width: 158px;
+}
