@@ -1,7 +1,7 @@
 import style from './ToDo.module.css';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { postRequest, putRequest } from '../../hooks/http.hooks';
+import { postRequest, putRequest, deleteRequest} from '../../hooks/http.hooks';
 
 const ToDo = () => {
     const { state } = useLocation();
@@ -11,17 +11,23 @@ const ToDo = () => {
     const [deleteNumber, setDeleteNumber] = useState("");
 
     const changeTask = async () => {
-    //     const createdTask = await postRequest("http://localhost:3001/api/tasks/create", 'POST', {
-    //         task: createTask,
-    //         user_id: state.id
-    //     })
-    //     console.log(createdTask);
+        const createdTask = await postRequest("http://localhost:3001/api/tasks/create", 'POST', {
+            task: createTask,
+            user_id: state.id
+        })
+        console.log(createdTask);
 
         const updatedTask = await putRequest("http://localhost:3001/api/tasks/update", 'PUT', {
             id: updateNumber,
             task: updateTask
         })
         console.log(updatedTask);
+
+        const deletedTask = await deleteRequest("http://localhost:3001/api/tasks/delete", "DELETE", {
+            id: deleteNumber
+        })
+        console.log(deletedTask)
+        
     }
     return (
         <div className={style['toDo-content']}>

@@ -1,8 +1,11 @@
 .tasksShedule-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 700px;
 }
+
+
 
 .tasksShedule-Tasks {
     width: 74px;

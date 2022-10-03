@@ -4,6 +4,7 @@ const TasksShedule = () => {
     return (
         
         <div className={style['tasksShedule-content']}>
+            
             <h1 className={style['tasksShedule-Tasks']}>Tasks: </h1>
             <p className={style['taskShedule-text']}>1. Empty task</p>
             <p className={style['taskShedule-text']}>2. Empty task</p>

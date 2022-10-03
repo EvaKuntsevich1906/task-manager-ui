@@ -13,18 +13,21 @@ const TaskPage = () => {
     const user = state.user
     return (
         <div className={style['task-page']}>
+            
             <div className={style['task-menu-wrap']}><Menu></Menu></div>
-            <div className={style['task-page-header']}>
-                <h1>Hschool</h1>
+
+            <div className={style['task-header-main']}>
                 <Header><HeaderItem title={`logout`} /></Header>
                 <div className={style['task-page-main']}>
-                <div className={style['task-taskcounter-wrap']}><TaskCounter name={state.fullname} /></div>
-                <div className={style['task-todo-wrap']} id= {state.id}><ToDo /></div>
-                <div className={style['task-todo-wrap']}><TasksShedule /></div>
+                    <div className={style['task-taskcounter-wrap']}><TaskCounter name={state.fullname} /></div>
+                    <div className={style['task-todo-wrap']} id={state.id}><ToDo /></div>
+                    <div className={style['task-todo-wrap']}><TasksShedule /></div>
                 </div>
             </div>
-            </div>
+            <div className={style['background-gradient']}></div>
+            <div className={style['background-image']}></div>
+        </div>
     )
 };
 
-            export default TaskPage;
+export default TaskPage;

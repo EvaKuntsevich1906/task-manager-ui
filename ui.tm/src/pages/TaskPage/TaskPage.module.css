@@ -1,10 +1,41 @@
 .task-page {
+  position: relative;
+  width: 1860px;
   display: flex;
+
+}
+.task-menu-wrap {
+  width: 100px;
 }
 
+.background-gradient {
+  position: absolute;
+  background-image: url(./assets/background.svg);
+width: 778px;
+height: 874px;
+left: 1200px;
+top: -2px;
+z-index: -2;
+}
+
+.background-image {
+  position: absolute;
+  background-image: url(./assets/back-image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 420.04px;
+  height: 763.19px;
+  left: 1460.58px;
+  top: 118.37px; 
+}
 
 .task-page-main {
+  width: 1820px;
     display: flex;
     justify-content: space-between;
+    padding-left: 50px;
+    margin-top: 55px;
+
 }
+
 
