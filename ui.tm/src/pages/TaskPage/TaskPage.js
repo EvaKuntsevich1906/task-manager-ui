@@ -10,7 +10,7 @@ import HeaderItem from '../../components/Header/HeaderItem';
 const TaskPage = () => {
     const { state } = useLocation();
     console.log(`state ${state.id}`);
-    const user = state.user
+
     return (
         <div className={style['task-page']}>
             

@@ -16,7 +16,8 @@ const Header = () => {
 
                 <div className={style['header-nightmode']}></div>
 
-                {link.map((el, index) => <HeaderItem key={index} title={el} />)}
+                <div className={style['header-contact-flex']}>
+                    {link.map((el, index) => <HeaderItem key={index} title={el} />)}</div>
 
                 <div className={style[`authorization`]}>
                     <div className={style['header-signup-button']}>

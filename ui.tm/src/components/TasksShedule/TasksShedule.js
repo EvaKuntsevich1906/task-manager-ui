@@ -1,26 +1,33 @@
 import style from './TasksShedule.module.css';
+import { getRequest } from '../../hooks/http.hooks';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
-const TasksShedule = () => {
-    return (
-        
-        <div className={style['tasksShedule-content']}>
-            
-            <h1 className={style['tasksShedule-Tasks']}>Tasks: </h1>
-            <p className={style['taskShedule-text']}>1. Empty task</p>
-            <p className={style['taskShedule-text']}>2. Empty task</p>
-            <p className={style['taskShedule-text']}>3. Empty task</p>
-            <p className={style['taskShedule-text']}>4. Empty task</p>
-            <p className={style['taskShedule-text']}>5. Empty task</p>
-            <p className={style['taskShedule-text']}>6. Empty task</p>
-            <p className={style['taskShedule-text']}>7. Empty task</p>
-            <p className={style['taskShedule-text']}>8. Empty task</p>
-            <p className={style['taskShedule-text']}>9. Empty task</p>
-            <p className={style['taskShedule-text']}>10. Empty task</p>
-            <p className={style['taskShedule-text']}>11. Empty task</p>
-            <p className={style['taskShedule-text']}>12. Empty task</p>
-        </div>
 
-    );
+const TasksShedule = ({ tasks }) => {
+
+    const getTask = () => {
+        const { state } = useLocation();
+        const { effect } = useEffect();
+
+        const gotAllTaskTask = async () => {
+            const getAllTask = await getRequest("http://localhost:3001/api/tasks", 'GET', {
+
+
+            })
+            console.log(getAllTask);
+
+        }
+        return (
+
+            <div className={style['tasksShedule-content']}>
+
+                <h1 className={style['tasksShedule-Tasks']}>Tasks: </h1>
+                <p className={effect.tasks}></p>
+
+            </div>
+
+        );
+    }
 }
-
-export default TasksShedule;
+    export default TasksShedule;

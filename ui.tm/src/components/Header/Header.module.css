@@ -33,11 +33,21 @@
     background-size: cover;
 }
 
+.header-contact-flex {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 24px;
+    width: 210px;
+    color: rgba(74, 74, 74, 0.72);
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
 .header-contact {
     width: 102px;
     height: 36px;
     font-weight: 400;
-    font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.03em;
     color: rgba(74, 74, 74, 0.72);
@@ -110,3 +120,9 @@ align-items: center;
     text-align: center;
     color: #31C2E4;
 }   
+
+.authorization {
+    display: flex;
+    justify-content: space-between;
+    width: 393px;
+}
