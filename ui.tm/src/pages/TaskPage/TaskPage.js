@@ -25,6 +25,8 @@ const TaskPage = () => {
             user_id: user_id
         }
         )
+
+        
         const parsedTasks = getAllTask.map(el=>el.task)
         setAllTask(parsedTasks)
         return getAllTask;
